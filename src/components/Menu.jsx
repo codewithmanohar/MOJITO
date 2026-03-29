@@ -22,7 +22,7 @@ const Menu = () => {
         });
 
     }, [currentIndex]);
-
+ 
     const goToSlide = (index) => {
         const newIndex = (index + totalCocktails) % totalCocktails;
         setCurrentIndex(newIndex);
@@ -91,7 +91,6 @@ const Menu = () => {
                     <div className='details'>
                         <h2>{currentCocktail.title}</h2>
                         <p>{currentCocktail.description}</p>
-
                     </div>
                 </div>
 
